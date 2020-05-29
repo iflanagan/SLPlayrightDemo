@@ -1,0 +1,23 @@
+
+NOTE: you must have a valid Sauce Labs user account.
+
+steps:
+
+run these commands:
+
+npm i -g saucectl
+
+# or the same command above using curl: curl -L https://saucelabs.github.io/saucectl/install | bash
+
+saucectl new (pick puppeteer)
+
+export SAUCE_USERNAME=<your-username>
+export SAUCE_ACCESS_KEY=<your-access-key>
+
+saucectl new
+This command will ask you to choose a framework between Puppeteer and Playwright.
+Choose Puppeteer
+
+saucectl run
+
+NOTE: to adjust what tests are executed look in this file ./sauce/config.yml 
